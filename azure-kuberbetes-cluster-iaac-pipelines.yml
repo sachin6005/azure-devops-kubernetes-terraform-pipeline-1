@@ -21,7 +21,10 @@ steps:
     commandOptions: '-var client_id =$(client_id)  -var client_secret=$(client_secret)  -var ssh_public_key-$(publickey.secureFilePath)'
     backendType: 'azurerm'
     backendServiceArm: 'Azure-resource-manager-service-connections'
+    backendAzureRmSubscriptionId: '88783902-99d2-4071-b431-3ba5593770b7'
+    ensureBackend: true
     backendAzureRmResourceGroupName: 'terraform-backend-rg'
+    backendAzureRmResourceGroupLocation: 'Central US'
     backendAzureRmStorageAccountName: 'StorageSachinM'
     backendAzureRmContainerName: 'StorageaccountSachin'
     backendAzureRmKey: 'Kubernetes-dev.tfstate'
